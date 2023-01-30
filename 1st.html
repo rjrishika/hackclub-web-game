@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Matrix Quiz</title>
+    <link rel="stylesheet" href="design.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="score">
+        score: <span id="scorevalue" style="font-weight: 900">0</span>
+      </div>
+    </div>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="content">
+      
+      <h1>
+        In a certain code 'ROAR' is written as 'URDU'. How is 'URDU' written in
+        that code?
+      </h1>
+      <div class="container">
+        <button id="1" class="custom-btn btn-5" onclick="fun(this.id)">
+          <span>V S O V</span>
+        </button>
+        <button id="2" class="custom-btn btn-5" onclick="fun(this.id)">
+          <span>V X D Q</span>
+        </button>
+        <button id="3" class="custom-btn btn-5" onclick="fun(this.id)">
+          <span> R O A R</span>
+        </button>
+        <button id="4" class="custom-btn btn-5" onclick="fun(this.id)">
+          <span> X U G X</span>
+        </button>
+      </div>
+      <div id="count">
+        <h2></h2>
+      </div>
+    </div>
+    
+  </body>
+  <script>
+    document.getElementById('count').getElementsByTagName('h2').innerText=localStorage.counter;
+  </script>
+  <script src="script.js"></script>
+</html>
